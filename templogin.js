@@ -19,9 +19,7 @@
             padding: responsiveHeight(2),
         },
         mainContainer: {
-            flexDirection: 'column',
             justifyContent: 'center',
-            alignItems: 'stretch',
             backgroundColor: "white",
             padding: responsiveHeight(3),
         },
@@ -42,8 +40,8 @@
             borderColor: "gray"
         },
         imageStyle: {
-            width: responsiveHeight(80),
-            height: responsiveHeight(100),
+            width: 100,
+            height: 180,
             padding: responsiveHeight(5),
         },
         positiveButton: {
