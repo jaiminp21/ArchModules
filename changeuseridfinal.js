@@ -87,8 +87,8 @@
 
     function changeUserIdPost(localState){
 
-        console.warn(localState.state.newUserId);
-        console.warn(localState.state.confirmUserId);
+        //console.warn(localState.state.newUserId);
+        //console.warn(localState.state.confirmUserId);
 
         if(!(localState.state.newUserId) || !(localState.state.confirmUserId)){
             _nativebase.Toast.show({
