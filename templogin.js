@@ -19,7 +19,10 @@
             padding: responsiveHeight(2),
         },
         mainContainer: {
-            justifyContent: "flex-start",
+            flex: 1,
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'stretch',
             backgroundColor: "white",
             padding: responsiveHeight(3),
         },
