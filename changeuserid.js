@@ -86,7 +86,7 @@
     }
     
   function logout(localState){ 
-      componentState.api.fetchAsync("https://cfsfiserv.com/QEUATSMT/api/Authentication/LogOut",
+      componentState.api.fetchAsync("http://192.168.1.15/UI/api/Authentication/LogOut",
                             "POST",
                             {
                                 "X-CSRF-TOKEN": localState.state.loginToken
