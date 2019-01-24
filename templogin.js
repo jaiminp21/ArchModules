@@ -19,9 +19,9 @@
             padding: responsiveHeight(2),
         },
         mainContainer: {
-            justifyContent: 'center',
-            backgroundColor: "white",
-            padding: responsiveHeight(3),
+            justifyContent: "flex-start",
+            backgroundColor: "white", 
+            padding: responsiveHeight(1),
         },
         subContainer: {
             paddingBottom: responsiveHeight(2),
@@ -42,7 +42,6 @@
         imageStyle: {
             width: 100,
             height: 180,
-            padding: responsiveHeight(5),
         },
         positiveButton: {
             fontSize: responsiveFontSize(3),
