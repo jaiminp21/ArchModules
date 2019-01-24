@@ -124,7 +124,7 @@
                     console.warn(result)
                      console.warn("result")
 
-                    api.fetchAsync("http://192.168.1.15/UI/api",
+                    api.fetchAsync("https://cfsfiserv.com/QEUATSMT/api",
                         "GET",
                         {
                             "Content-Type": "application/json",
@@ -151,7 +151,7 @@
                             token: result1.getAccountsAt.token,
                         });
 
-                        api.fetchAsync("http://192.168.1.15" + result1.getAccountsAt.url,
+                        api.fetchAsync("https://cfsfiserv.com" + result1.getAccountsAt.url,
                             result1.getAccountsAt.method,
                             {
                                 "X-CSRF-TOKEN": result.antiForgeryToken,
