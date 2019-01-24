@@ -93,7 +93,7 @@
         localState.setState({ isLoading: false });
     }
     function logout(localState){ 
-      api.fetchAsync("https://cfsfiserv.com/QEUATSMT/api/Authentication/LogOut",
+      api.fetchAsync("http://192.168.1.15/UI/api/Authentication/LogOut",
                             "POST",
                             {
                                 "X-CSRF-TOKEN": localState.state.loginToken
@@ -146,7 +146,7 @@
                     //console.warn(result)
                      //console.warn("result")
 
-                    api.fetchAsync("https://cfsfiserv.com/QEUATSMT/api",
+                    api.fetchAsync("http://192.168.1.15/UI/api",
                         "GET",
                         {
                             "Content-Type": "application/json",
@@ -174,7 +174,7 @@
                             loginToken : result.antiForgeryToken 
                         });
 
-                        api.fetchAsync("https://cfsfiserv.com" + result1.getAccountsAt.url,
+                        api.fetchAsync("http://192.168.1.15" + result1.getAccountsAt.url,
                             result1.getAccountsAt.method,
                             {
                                 "X-CSRF-TOKEN": result.antiForgeryToken,
