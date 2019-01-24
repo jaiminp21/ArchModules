@@ -18,35 +18,34 @@
         padding: {
             padding: responsiveHeight(2),
         },
-        scrollView: {
-            flex: 1,
-            backgroundColor: "white",
-        },
         mainContainer: {
             justifyContent: "flex-start",
             backgroundColor: "white",
-            padding: responsiveHeight(1)
+            padding: responsiveHeight(3),
         },
         subContainer: {
             paddingBottom: responsiveHeight(2),
-            paddingLeft: responsiveHeight(1.5)
+            paddingLeft: responsiveHeight(1.5),
+            paddingRight: responsiveHeight(1.5),
         },
         labelText: {
             fontSize: responsiveFontSize(titleSize),
-            textAlign: "justify"
+            textAlign: "justify",
+            color: "blue",
         },
         inputText: {
             borderWidth: 0.9,
-            padding: 0,
+            padding: 1,
             backgroundColor: "white",
             borderColor: "gray"
         },
         imageStyle: {
-            width: '90%',
-            height: 180,
+            width: responsiveHeight(80),
+            height: responsiveHeight(100),
+            padding: responsiveHeight(5),
         },
         positiveButton: {
-            fontSize: responsiveFontSize(2),
+            fontSize: responsiveFontSize(3),
             fontWeight: "normal",
             padding: responsiveHeight(0.5),
             color: "white",
@@ -55,7 +54,7 @@
             backgroundColor: "#0061b8",
         },
         negativeButton: {
-            fontSize: responsiveFontSize(2),
+            fontSize: responsiveFontSize(3),
             fontWeight: "normal",
             padding: responsiveHeight(0.5),
             borderWidth: responsiveHeight(0.1),
