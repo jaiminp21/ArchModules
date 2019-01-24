@@ -19,7 +19,6 @@
             padding: responsiveHeight(2),
         },
         mainContainer: {
-            flex: 1,
             flexDirection: 'column',
             justifyContent: 'center',
             alignItems: 'stretch',
