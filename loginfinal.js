@@ -98,14 +98,14 @@
 
     function loginCall(localState) {
         var userJsonData = {"loginName": localState.state.userName, "password": localState.state.password};
-        console.warn("In Login")
-        console.warn(userJsonData);
-        console.warn("After In Login")
+        //console.warn("In Login")
+        //console.warn(userJsonData);
+        //console.warn("After In Login")
 
         showLoading(localState);
 
         componentState.localStorage.getData("LoginData").then(function (result) {
-            console.warn(result);
+            //console.warn(result);
             var result = JSON.parse(result);
             if (result && result.antiForgeryToken) {
                 //console.warn(result);
@@ -113,7 +113,7 @@
                 //const { navigate } = this.props.navigation;
                 navigate('AccountSummary');
             } else {
-                console.warn("Login");
+                //console.warn("Login");
                 api.fetchAsync("https://cfsfiserv.com/QEUATSMT/api/Authentication/LogIn","POST",
                     {
                      'Content-Type':'application/json',
@@ -121,8 +121,8 @@
                     JSON.stringify(userJsonData)
                 ).then(function (loginresult) {
 
-                    console.warn("Login Result");
-                    console.warn(loginresult);
+                    //console.warn("Login Result");
+                    //console.warn(loginresult);
 
                     if (!loginresult.antiForgeryToken) {
                         hideLoading(localState);
@@ -152,8 +152,8 @@
                     });
 
                     componentState.localStorage.getData("LoginData").then(function(result1) {
-                        console.warn("Get LoginData");
-                        console.warn(result1);
+                        //console.warn("Get LoginData");
+                        //console.warn(result1);
                     });
 
                     if (loginresult.antiForgeryToken) {
@@ -238,7 +238,7 @@
         _createClass(NewComponent, [{
             key: 'componentDidMount',
             value: function componentDidMount() {
-                console.warn('New component mounted');
+                //console.warn('New component mounted');
             }
         }, {
             key: 'render',
