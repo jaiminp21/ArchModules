@@ -143,8 +143,8 @@
                 componentState.localStorage.getData("LoginData").then(function(result) {
 
                     var result = JSON.parse(result);
-                    console.warn(result)
-                     console.warn("result")
+                    //console.warn(result)
+                     //console.warn("result")
 
                     api.fetchAsync("https://cfsfiserv.com/QEUATSMT/api",
                         "GET",
