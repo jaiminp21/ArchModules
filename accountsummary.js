@@ -146,7 +146,7 @@
                     //console.warn(result)
                      //console.warn("result")
 
-                    api.fetchAsync("https://cfsfiserv.com/DevUI",
+                    api.fetchAsync("https://cfsfiserv.com/DevUI/api",
                         "GET",
                         {
                             "Content-Type": "application/json",
