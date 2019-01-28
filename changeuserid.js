@@ -86,7 +86,7 @@
     }
     
   function logout(localState){ 
-      componentState.api.fetchAsync("http://192.168.1.15/UI/api/Authentication/LogOut",
+      componentState.api.fetchAsync("https://cfsfiserv.com/DevUI/api/Authentication/LogOut",
                             "POST",
                             {
                                 "X-CSRF-TOKEN": localState.state.loginToken
@@ -140,7 +140,7 @@
             var jsonData = JSON.parse(result);
             var data = { "loginName": localState.state.newUserId };
 
-            componentState.api.fetchAsync("http://192.168.1.15" + jsonData.profile.postLoginNameAt.url,
+            componentState.api.fetchAsync("https://cfsfiserv.com" + jsonData.profile.postLoginNameAt.url,
                     jsonData.profile.postLoginNameAt.method,
                     {
                         "X-CSRF-TOKEN": jsonData.sessionKey.antiForgeryToken,
