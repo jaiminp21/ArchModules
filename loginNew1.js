@@ -248,7 +248,7 @@
             key: 'componentDidMount',
             value: function componentDidMount() {
                 //console.warn('New component mounted');
-                console.warn("Mounted SuccessFully");
+                //console.warn("Mounted SuccessFully");
             }
         }, {
             key: 'render',
