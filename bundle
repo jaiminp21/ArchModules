@@ -1,0 +1,60 @@
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+(function (React, reactNative, reactNavigation) {
+    var AccountSummary = (function (_super) {
+        __extends(AccountSummary, _super);
+        function AccountSummary(props) {
+            var _this = _super.call(this, props) || this;
+            _this.state = {};
+            return _this;
+        }
+        AccountSummary.prototype.render = function () {
+            var navigate = this.props.navigation.navigate;
+            return (React.createElement(reactNative.View, null,
+                React.createElement(reactNative.Text, null, "AccountSummary"),
+                React.createElement(reactNative.Button, { title: "Click here for go to Transaction History", color: "#841584", onPress: function () { return navigate('TransactionHistory', { name: 'TransactionHistory' }); } })));
+        };
+        AccountSummary.navigationOptions = {
+            title: 'ACCOUNT SUMMARY'
+        };
+        return AccountSummary;
+    }(React.Component));
+    var TransactionHistory = (function (_super) {
+        __extends(TransactionHistory, _super);
+        function TransactionHistory(props) {
+            var _this = _super.call(this, props) || this;
+            _this.state = {};
+            return _this;
+        }
+        TransactionHistory.prototype.render = function () {
+            return (React.createElement(reactNative.View, null,
+                React.createElement(reactNative.Text, null, "TransactionHistory")));
+        };
+        TransactionHistory.navigationOptions = {
+            title: 'TRANSACTION HISTORY'
+        };
+        return TransactionHistory;
+    }(React.Component));
+    var MainNavigator = reactNavigation.createStackNavigator({
+        AccountSummary: { screen: AccountSummary },
+        TransactionHistory: { screen: TransactionHistory }
+    }, {
+        defaultRouteName: 'AccountSummary'
+    });
+    var MyApp = reactNavigation.createAppContainer(MainNavigator);
+    return {
+        App: MyApp
+    };
+});
+//# sourceMappingURL=bundle.js.map
